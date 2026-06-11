@@ -1,0 +1,1642 @@
+{
+  "vessels": [
+    {
+      "id": 1,
+      "name": "近海明珠号",
+      "imo_number": "IMO9876543",
+      "max_weight": 5000,
+      "max_volume": 25000,
+      "draft": 8.5,
+      "route": "青岛-烟台-大连",
+      "capacity_20ft": 200,
+      "capacity_40ft": 100,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "渤海之星号",
+      "imo_number": "IMO9876544",
+      "max_weight": 3500,
+      "max_volume": 18000,
+      "draft": 7,
+      "route": "天津-秦皇岛-营口",
+      "capacity_20ft": 150,
+      "capacity_40ft": 75,
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "name": "东海快线号",
+      "imo_number": "IMO9876545",
+      "max_weight": 8000,
+      "max_volume": 40000,
+      "draft": 10.5,
+      "route": "上海-宁波-福州",
+      "capacity_20ft": 350,
+      "capacity_40ft": 175,
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "name": "南海一号",
+      "imo_number": "IMO9876546",
+      "max_weight": 12000,
+      "max_volume": 60000,
+      "draft": 12,
+      "route": "广州-深圳-海口",
+      "capacity_20ft": 500,
+      "capacity_40ft": 250,
+      "status": "active"
+    }
+  ],
+  "cargo_orders": [
+    {
+      "id": 1,
+      "order_no": "ORD202606001",
+      "customer_name": "青岛海洋食品有限公司",
+      "customer_contact": "13800138001",
+      "cargo_name": "冷冻海鲜集装箱",
+      "cargo_type": "冷藏货",
+      "weight": 2500,
+      "volume": 1200,
+      "container_type": "20FT",
+      "container_count": 10,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "青岛",
+      "destination_port": "烟台",
+      "delivery_deadline": "2026-06-15",
+      "status": "shipped"
+    },
+    {
+      "id": 2,
+      "order_no": "ORD202606002",
+      "customer_name": "烟台化工集团",
+      "customer_contact": "13800138002",
+      "cargo_name": "乙醇桶装",
+      "cargo_type": "易燃液体",
+      "weight": 800,
+      "volume": 900,
+      "container_type": "20FT",
+      "container_count": 4,
+      "is_dangerous": 1,
+      "dangerous_category": "易燃液体",
+      "un_number": "UN1170",
+      "origin_port": "烟台",
+      "destination_port": "大连",
+      "delivery_deadline": "2026-06-16",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "order_no": "ORD202606003",
+      "customer_name": "大连机械制造有限公司",
+      "customer_contact": "13800138003",
+      "cargo_name": "工业机械设备",
+      "cargo_type": "普通货",
+      "weight": 3200,
+      "volume": 5600,
+      "container_type": "40FT",
+      "container_count": 8,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "青岛",
+      "destination_port": "大连",
+      "delivery_deadline": "2026-06-14",
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "order_no": "ORD202606004",
+      "customer_name": "青岛农业合作社",
+      "customer_contact": "13800138004",
+      "cargo_name": "新鲜蔬菜",
+      "cargo_type": "食品类货物",
+      "weight": 600,
+      "volume": 1500,
+      "container_type": "20FT",
+      "container_count": 3,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "青岛",
+      "destination_port": "大连",
+      "delivery_deadline": "2026-06-13",
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "order_no": "ORD202606005",
+      "customer_name": "山东农药厂",
+      "customer_contact": "13800138005",
+      "cargo_name": "杀虫剂浓缩液",
+      "cargo_type": "毒性物质",
+      "weight": 300,
+      "volume": 400,
+      "container_type": "20FT",
+      "container_count": 2,
+      "is_dangerous": 1,
+      "dangerous_category": "毒性物质",
+      "un_number": "UN2902",
+      "origin_port": "青岛",
+      "destination_port": "烟台",
+      "delivery_deadline": "2026-06-17",
+      "status": "pending"
+    },
+    {
+      "id": 6,
+      "order_no": "ORD202606006",
+      "customer_name": "华东电子科技",
+      "customer_contact": "13800138006",
+      "cargo_name": "精密电子仪器",
+      "cargo_type": "贵重货",
+      "weight": 1200,
+      "volume": 800,
+      "container_type": "20FT",
+      "container_count": 5,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "上海",
+      "destination_port": "宁波",
+      "delivery_deadline": "2026-06-15",
+      "status": "pending"
+    },
+    {
+      "id": 7,
+      "order_no": "ORD202606007",
+      "customer_name": "宁波纺织集团",
+      "customer_contact": "13800138007",
+      "cargo_name": "成品布匹",
+      "cargo_type": "普通货",
+      "weight": 1500,
+      "volume": 4500,
+      "container_type": "40FT",
+      "container_count": 4,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "上海",
+      "destination_port": "福州",
+      "delivery_deadline": "2026-06-16",
+      "status": "pending"
+    },
+    {
+      "id": 8,
+      "order_no": "ORD202606008",
+      "customer_name": "广州建材市场",
+      "customer_contact": "13800138008",
+      "cargo_name": "建筑钢材",
+      "cargo_type": "普通货",
+      "weight": 4500,
+      "volume": 2200,
+      "container_type": "散货",
+      "container_count": 0,
+      "is_dangerous": 0,
+      "dangerous_category": "",
+      "un_number": "",
+      "origin_port": "广州",
+      "destination_port": "海口",
+      "delivery_deadline": "2026-06-18",
+      "status": "pending"
+    }
+  ],
+  "dangerous_goods_rules": [
+    {
+      "id": 1,
+      "category_a": "爆炸品",
+      "category_b": "易燃气体",
+      "conflict_level": "critical",
+      "rule_description": "爆炸品与易燃气体禁止同船装载"
+    },
+    {
+      "id": 2,
+      "category_a": "爆炸品",
+      "category_b": "氧化性物质",
+      "conflict_level": "critical",
+      "rule_description": "爆炸品与氧化性物质禁止同船装载"
+    },
+    {
+      "id": 3,
+      "category_a": "易燃气体",
+      "category_b": "毒性气体",
+      "conflict_level": "critical",
+      "rule_description": "易燃气体与毒性气体禁止同船装载"
+    },
+    {
+      "id": 4,
+      "category_a": "易燃液体",
+      "category_b": "腐蚀性物质",
+      "conflict_level": "high",
+      "rule_description": "易燃液体与腐蚀性物质需隔离装载"
+    },
+    {
+      "id": 5,
+      "category_a": "易燃固体",
+      "category_b": "氧化性物质",
+      "conflict_level": "high",
+      "rule_description": "易燃固体与氧化性物质需隔离装载"
+    },
+    {
+      "id": 6,
+      "category_a": "氧化性物质",
+      "category_b": "有机过氧化物",
+      "conflict_level": "critical",
+      "rule_description": "氧化性物质与有机过氧化物禁止同船装载"
+    },
+    {
+      "id": 7,
+      "category_a": "毒性物质",
+      "category_b": "食品类货物",
+      "conflict_level": "critical",
+      "rule_description": "毒性物质与食品类货物禁止同船装载"
+    },
+    {
+      "id": 8,
+      "category_a": "放射性物质",
+      "category_b": "任何货物",
+      "conflict_level": "critical",
+      "rule_description": "放射性物质需单独专船运输"
+    },
+    {
+      "id": 9,
+      "category_a": "腐蚀性物质",
+      "category_b": "易燃固体",
+      "conflict_level": "high",
+      "rule_description": "腐蚀性物质与易燃固体需隔离装载"
+    }
+  ],
+  "tide_windows": [
+    {
+      "id": 1,
+      "port_name": "青岛",
+      "date": "2026-06-11",
+      "high_tide_start": "04:56",
+      "high_tide_end": "07:25",
+      "max_draft": 8.74,
+      "notes": "早潮"
+    },
+    {
+      "id": 2,
+      "port_name": "青岛",
+      "date": "2026-06-11",
+      "high_tide_start": "16:27",
+      "high_tide_end": "19:10",
+      "max_draft": 8.3,
+      "notes": "晚潮"
+    },
+    {
+      "id": 3,
+      "port_name": "烟台",
+      "date": "2026-06-11",
+      "high_tide_start": "04:35",
+      "high_tide_end": "07:22",
+      "max_draft": 8.97,
+      "notes": "早潮"
+    },
+    {
+      "id": 4,
+      "port_name": "烟台",
+      "date": "2026-06-11",
+      "high_tide_start": "16:46",
+      "high_tide_end": "19:18",
+      "max_draft": 8.52,
+      "notes": "晚潮"
+    },
+    {
+      "id": 5,
+      "port_name": "大连",
+      "date": "2026-06-11",
+      "high_tide_start": "04:31",
+      "high_tide_end": "07:02",
+      "max_draft": 11.92,
+      "notes": "早潮"
+    },
+    {
+      "id": 6,
+      "port_name": "大连",
+      "date": "2026-06-11",
+      "high_tide_start": "16:46",
+      "high_tide_end": "19:28",
+      "max_draft": 11.32,
+      "notes": "晚潮"
+    },
+    {
+      "id": 7,
+      "port_name": "天津",
+      "date": "2026-06-11",
+      "high_tide_start": "04:30",
+      "high_tide_end": "07:27",
+      "max_draft": 7.57,
+      "notes": "早潮"
+    },
+    {
+      "id": 8,
+      "port_name": "天津",
+      "date": "2026-06-11",
+      "high_tide_start": "16:23",
+      "high_tide_end": "19:05",
+      "max_draft": 7.19,
+      "notes": "晚潮"
+    },
+    {
+      "id": 9,
+      "port_name": "上海",
+      "date": "2026-06-11",
+      "high_tide_start": "04:54",
+      "high_tide_end": "07:01",
+      "max_draft": 10.33,
+      "notes": "早潮"
+    },
+    {
+      "id": 10,
+      "port_name": "上海",
+      "date": "2026-06-11",
+      "high_tide_start": "16:48",
+      "high_tide_end": "19:28",
+      "max_draft": 9.82,
+      "notes": "晚潮"
+    },
+    {
+      "id": 11,
+      "port_name": "宁波",
+      "date": "2026-06-11",
+      "high_tide_start": "04:36",
+      "high_tide_end": "07:06",
+      "max_draft": 9.56,
+      "notes": "早潮"
+    },
+    {
+      "id": 12,
+      "port_name": "宁波",
+      "date": "2026-06-11",
+      "high_tide_start": "16:45",
+      "high_tide_end": "19:22",
+      "max_draft": 9.09,
+      "notes": "晚潮"
+    },
+    {
+      "id": 13,
+      "port_name": "福州",
+      "date": "2026-06-11",
+      "high_tide_start": "04:58",
+      "high_tide_end": "07:29",
+      "max_draft": 7.09,
+      "notes": "早潮"
+    },
+    {
+      "id": 14,
+      "port_name": "福州",
+      "date": "2026-06-11",
+      "high_tide_start": "16:35",
+      "high_tide_end": "19:11",
+      "max_draft": 6.73,
+      "notes": "晚潮"
+    },
+    {
+      "id": 15,
+      "port_name": "广州",
+      "date": "2026-06-11",
+      "high_tide_start": "04:58",
+      "high_tide_end": "07:03",
+      "max_draft": 10.99,
+      "notes": "早潮"
+    },
+    {
+      "id": 16,
+      "port_name": "广州",
+      "date": "2026-06-11",
+      "high_tide_start": "16:27",
+      "high_tide_end": "19:11",
+      "max_draft": 10.44,
+      "notes": "晚潮"
+    },
+    {
+      "id": 17,
+      "port_name": "深圳",
+      "date": "2026-06-11",
+      "high_tide_start": "04:32",
+      "high_tide_end": "07:00",
+      "max_draft": 7.19,
+      "notes": "早潮"
+    },
+    {
+      "id": 18,
+      "port_name": "深圳",
+      "date": "2026-06-11",
+      "high_tide_start": "16:43",
+      "high_tide_end": "19:03",
+      "max_draft": 6.83,
+      "notes": "晚潮"
+    },
+    {
+      "id": 19,
+      "port_name": "海口",
+      "date": "2026-06-11",
+      "high_tide_start": "04:55",
+      "high_tide_end": "07:01",
+      "max_draft": 8.29,
+      "notes": "早潮"
+    },
+    {
+      "id": 20,
+      "port_name": "海口",
+      "date": "2026-06-11",
+      "high_tide_start": "16:43",
+      "high_tide_end": "19:02",
+      "max_draft": 7.88,
+      "notes": "晚潮"
+    },
+    {
+      "id": 21,
+      "port_name": "青岛",
+      "date": "2026-06-12",
+      "high_tide_start": "04:49",
+      "high_tide_end": "07:15",
+      "max_draft": 9.19,
+      "notes": "早潮"
+    },
+    {
+      "id": 22,
+      "port_name": "青岛",
+      "date": "2026-06-12",
+      "high_tide_start": "16:49",
+      "high_tide_end": "19:29",
+      "max_draft": 8.73,
+      "notes": "晚潮"
+    },
+    {
+      "id": 23,
+      "port_name": "烟台",
+      "date": "2026-06-12",
+      "high_tide_start": "04:58",
+      "high_tide_end": "07:25",
+      "max_draft": 8.73,
+      "notes": "早潮"
+    },
+    {
+      "id": 24,
+      "port_name": "烟台",
+      "date": "2026-06-12",
+      "high_tide_start": "16:42",
+      "high_tide_end": "19:11",
+      "max_draft": 8.29,
+      "notes": "晚潮"
+    },
+    {
+      "id": 25,
+      "port_name": "大连",
+      "date": "2026-06-12",
+      "high_tide_start": "04:36",
+      "high_tide_end": "07:21",
+      "max_draft": 8.72,
+      "notes": "早潮"
+    },
+    {
+      "id": 26,
+      "port_name": "大连",
+      "date": "2026-06-12",
+      "high_tide_start": "16:45",
+      "high_tide_end": "19:29",
+      "max_draft": 8.28,
+      "notes": "晚潮"
+    },
+    {
+      "id": 27,
+      "port_name": "天津",
+      "date": "2026-06-12",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:06",
+      "max_draft": 11.13,
+      "notes": "早潮"
+    },
+    {
+      "id": 28,
+      "port_name": "天津",
+      "date": "2026-06-12",
+      "high_tide_start": "16:37",
+      "high_tide_end": "19:16",
+      "max_draft": 10.57,
+      "notes": "晚潮"
+    },
+    {
+      "id": 29,
+      "port_name": "上海",
+      "date": "2026-06-12",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:05",
+      "max_draft": 9.28,
+      "notes": "早潮"
+    },
+    {
+      "id": 30,
+      "port_name": "上海",
+      "date": "2026-06-12",
+      "high_tide_start": "16:31",
+      "high_tide_end": "19:27",
+      "max_draft": 8.81,
+      "notes": "晚潮"
+    },
+    {
+      "id": 31,
+      "port_name": "宁波",
+      "date": "2026-06-12",
+      "high_tide_start": "04:38",
+      "high_tide_end": "07:20",
+      "max_draft": 8.91,
+      "notes": "早潮"
+    },
+    {
+      "id": 32,
+      "port_name": "宁波",
+      "date": "2026-06-12",
+      "high_tide_start": "16:47",
+      "high_tide_end": "19:04",
+      "max_draft": 8.46,
+      "notes": "晚潮"
+    },
+    {
+      "id": 33,
+      "port_name": "福州",
+      "date": "2026-06-12",
+      "high_tide_start": "04:53",
+      "high_tide_end": "07:18",
+      "max_draft": 9.56,
+      "notes": "早潮"
+    },
+    {
+      "id": 34,
+      "port_name": "福州",
+      "date": "2026-06-12",
+      "high_tide_start": "16:30",
+      "high_tide_end": "19:05",
+      "max_draft": 9.09,
+      "notes": "晚潮"
+    },
+    {
+      "id": 35,
+      "port_name": "广州",
+      "date": "2026-06-12",
+      "high_tide_start": "04:51",
+      "high_tide_end": "07:22",
+      "max_draft": 11.67,
+      "notes": "早潮"
+    },
+    {
+      "id": 36,
+      "port_name": "广州",
+      "date": "2026-06-12",
+      "high_tide_start": "16:29",
+      "high_tide_end": "19:17",
+      "max_draft": 11.08,
+      "notes": "晚潮"
+    },
+    {
+      "id": 37,
+      "port_name": "深圳",
+      "date": "2026-06-12",
+      "high_tide_start": "04:42",
+      "high_tide_end": "07:10",
+      "max_draft": 7.12,
+      "notes": "早潮"
+    },
+    {
+      "id": 38,
+      "port_name": "深圳",
+      "date": "2026-06-12",
+      "high_tide_start": "16:25",
+      "high_tide_end": "19:05",
+      "max_draft": 6.76,
+      "notes": "晚潮"
+    },
+    {
+      "id": 39,
+      "port_name": "海口",
+      "date": "2026-06-12",
+      "high_tide_start": "04:45",
+      "high_tide_end": "07:08",
+      "max_draft": 11.3,
+      "notes": "早潮"
+    },
+    {
+      "id": 40,
+      "port_name": "海口",
+      "date": "2026-06-12",
+      "high_tide_start": "16:21",
+      "high_tide_end": "19:10",
+      "max_draft": 10.74,
+      "notes": "晚潮"
+    },
+    {
+      "id": 41,
+      "port_name": "青岛",
+      "date": "2026-06-13",
+      "high_tide_start": "04:36",
+      "high_tide_end": "07:27",
+      "max_draft": 7.33,
+      "notes": "早潮"
+    },
+    {
+      "id": 42,
+      "port_name": "青岛",
+      "date": "2026-06-13",
+      "high_tide_start": "16:34",
+      "high_tide_end": "19:02",
+      "max_draft": 6.96,
+      "notes": "晚潮"
+    },
+    {
+      "id": 43,
+      "port_name": "烟台",
+      "date": "2026-06-13",
+      "high_tide_start": "04:52",
+      "high_tide_end": "07:05",
+      "max_draft": 7.61,
+      "notes": "早潮"
+    },
+    {
+      "id": 44,
+      "port_name": "烟台",
+      "date": "2026-06-13",
+      "high_tide_start": "16:31",
+      "high_tide_end": "19:04",
+      "max_draft": 7.23,
+      "notes": "晚潮"
+    },
+    {
+      "id": 45,
+      "port_name": "大连",
+      "date": "2026-06-13",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:07",
+      "max_draft": 9.27,
+      "notes": "早潮"
+    },
+    {
+      "id": 46,
+      "port_name": "大连",
+      "date": "2026-06-13",
+      "high_tide_start": "16:46",
+      "high_tide_end": "19:23",
+      "max_draft": 8.81,
+      "notes": "晚潮"
+    },
+    {
+      "id": 47,
+      "port_name": "天津",
+      "date": "2026-06-13",
+      "high_tide_start": "04:55",
+      "high_tide_end": "07:10",
+      "max_draft": 7.91,
+      "notes": "早潮"
+    },
+    {
+      "id": 48,
+      "port_name": "天津",
+      "date": "2026-06-13",
+      "high_tide_start": "16:31",
+      "high_tide_end": "19:03",
+      "max_draft": 7.51,
+      "notes": "晚潮"
+    },
+    {
+      "id": 49,
+      "port_name": "上海",
+      "date": "2026-06-13",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:19",
+      "max_draft": 11.42,
+      "notes": "早潮"
+    },
+    {
+      "id": 50,
+      "port_name": "上海",
+      "date": "2026-06-13",
+      "high_tide_start": "16:25",
+      "high_tide_end": "19:07",
+      "max_draft": 10.85,
+      "notes": "晚潮"
+    },
+    {
+      "id": 51,
+      "port_name": "宁波",
+      "date": "2026-06-13",
+      "high_tide_start": "04:36",
+      "high_tide_end": "07:23",
+      "max_draft": 10.07,
+      "notes": "早潮"
+    },
+    {
+      "id": 52,
+      "port_name": "宁波",
+      "date": "2026-06-13",
+      "high_tide_start": "16:26",
+      "high_tide_end": "19:04",
+      "max_draft": 9.57,
+      "notes": "晚潮"
+    },
+    {
+      "id": 53,
+      "port_name": "福州",
+      "date": "2026-06-13",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:01",
+      "max_draft": 10.63,
+      "notes": "早潮"
+    },
+    {
+      "id": 54,
+      "port_name": "福州",
+      "date": "2026-06-13",
+      "high_tide_start": "16:24",
+      "high_tide_end": "19:21",
+      "max_draft": 10.1,
+      "notes": "晚潮"
+    },
+    {
+      "id": 55,
+      "port_name": "广州",
+      "date": "2026-06-13",
+      "high_tide_start": "04:58",
+      "high_tide_end": "07:06",
+      "max_draft": 8.6,
+      "notes": "早潮"
+    },
+    {
+      "id": 56,
+      "port_name": "广州",
+      "date": "2026-06-13",
+      "high_tide_start": "16:48",
+      "high_tide_end": "19:21",
+      "max_draft": 8.17,
+      "notes": "晚潮"
+    },
+    {
+      "id": 57,
+      "port_name": "深圳",
+      "date": "2026-06-13",
+      "high_tide_start": "04:51",
+      "high_tide_end": "07:01",
+      "max_draft": 9.6,
+      "notes": "早潮"
+    },
+    {
+      "id": 58,
+      "port_name": "深圳",
+      "date": "2026-06-13",
+      "high_tide_start": "16:23",
+      "high_tide_end": "19:17",
+      "max_draft": 9.12,
+      "notes": "晚潮"
+    },
+    {
+      "id": 59,
+      "port_name": "海口",
+      "date": "2026-06-13",
+      "high_tide_start": "04:55",
+      "high_tide_end": "07:09",
+      "max_draft": 11.5,
+      "notes": "早潮"
+    },
+    {
+      "id": 60,
+      "port_name": "海口",
+      "date": "2026-06-13",
+      "high_tide_start": "16:44",
+      "high_tide_end": "19:12",
+      "max_draft": 10.92,
+      "notes": "晚潮"
+    },
+    {
+      "id": 61,
+      "port_name": "青岛",
+      "date": "2026-06-14",
+      "high_tide_start": "04:55",
+      "high_tide_end": "07:09",
+      "max_draft": 8.66,
+      "notes": "早潮"
+    },
+    {
+      "id": 62,
+      "port_name": "青岛",
+      "date": "2026-06-14",
+      "high_tide_start": "16:43",
+      "high_tide_end": "19:16",
+      "max_draft": 8.23,
+      "notes": "晚潮"
+    },
+    {
+      "id": 63,
+      "port_name": "烟台",
+      "date": "2026-06-14",
+      "high_tide_start": "04:43",
+      "high_tide_end": "07:22",
+      "max_draft": 9.84,
+      "notes": "早潮"
+    },
+    {
+      "id": 64,
+      "port_name": "烟台",
+      "date": "2026-06-14",
+      "high_tide_start": "16:45",
+      "high_tide_end": "19:27",
+      "max_draft": 9.35,
+      "notes": "晚潮"
+    },
+    {
+      "id": 65,
+      "port_name": "大连",
+      "date": "2026-06-14",
+      "high_tide_start": "04:33",
+      "high_tide_end": "07:24",
+      "max_draft": 11.53,
+      "notes": "早潮"
+    },
+    {
+      "id": 66,
+      "port_name": "大连",
+      "date": "2026-06-14",
+      "high_tide_start": "16:35",
+      "high_tide_end": "19:05",
+      "max_draft": 10.95,
+      "notes": "晚潮"
+    },
+    {
+      "id": 67,
+      "port_name": "天津",
+      "date": "2026-06-14",
+      "high_tide_start": "04:52",
+      "high_tide_end": "07:27",
+      "max_draft": 11.03,
+      "notes": "早潮"
+    },
+    {
+      "id": 68,
+      "port_name": "天津",
+      "date": "2026-06-14",
+      "high_tide_start": "16:20",
+      "high_tide_end": "19:23",
+      "max_draft": 10.48,
+      "notes": "晚潮"
+    },
+    {
+      "id": 69,
+      "port_name": "上海",
+      "date": "2026-06-14",
+      "high_tide_start": "04:57",
+      "high_tide_end": "07:10",
+      "max_draft": 8.02,
+      "notes": "早潮"
+    },
+    {
+      "id": 70,
+      "port_name": "上海",
+      "date": "2026-06-14",
+      "high_tide_start": "16:25",
+      "high_tide_end": "19:16",
+      "max_draft": 7.62,
+      "notes": "晚潮"
+    },
+    {
+      "id": 71,
+      "port_name": "宁波",
+      "date": "2026-06-14",
+      "high_tide_start": "04:34",
+      "high_tide_end": "07:11",
+      "max_draft": 11.19,
+      "notes": "早潮"
+    },
+    {
+      "id": 72,
+      "port_name": "宁波",
+      "date": "2026-06-14",
+      "high_tide_start": "16:37",
+      "high_tide_end": "19:02",
+      "max_draft": 10.63,
+      "notes": "晚潮"
+    },
+    {
+      "id": 73,
+      "port_name": "福州",
+      "date": "2026-06-14",
+      "high_tide_start": "04:57",
+      "high_tide_end": "07:27",
+      "max_draft": 10.86,
+      "notes": "早潮"
+    },
+    {
+      "id": 74,
+      "port_name": "福州",
+      "date": "2026-06-14",
+      "high_tide_start": "16:42",
+      "high_tide_end": "19:13",
+      "max_draft": 10.32,
+      "notes": "晚潮"
+    },
+    {
+      "id": 75,
+      "port_name": "广州",
+      "date": "2026-06-14",
+      "high_tide_start": "04:46",
+      "high_tide_end": "07:26",
+      "max_draft": 7.51,
+      "notes": "早潮"
+    },
+    {
+      "id": 76,
+      "port_name": "广州",
+      "date": "2026-06-14",
+      "high_tide_start": "16:38",
+      "high_tide_end": "19:13",
+      "max_draft": 7.13,
+      "notes": "晚潮"
+    },
+    {
+      "id": 77,
+      "port_name": "深圳",
+      "date": "2026-06-14",
+      "high_tide_start": "04:57",
+      "high_tide_end": "07:11",
+      "max_draft": 8.19,
+      "notes": "早潮"
+    },
+    {
+      "id": 78,
+      "port_name": "深圳",
+      "date": "2026-06-14",
+      "high_tide_start": "16:30",
+      "high_tide_end": "19:20",
+      "max_draft": 7.78,
+      "notes": "晚潮"
+    },
+    {
+      "id": 79,
+      "port_name": "海口",
+      "date": "2026-06-14",
+      "high_tide_start": "04:35",
+      "high_tide_end": "07:14",
+      "max_draft": 7.13,
+      "notes": "早潮"
+    },
+    {
+      "id": 80,
+      "port_name": "海口",
+      "date": "2026-06-14",
+      "high_tide_start": "16:47",
+      "high_tide_end": "19:07",
+      "max_draft": 6.77,
+      "notes": "晚潮"
+    },
+    {
+      "id": 81,
+      "port_name": "青岛",
+      "date": "2026-06-15",
+      "high_tide_start": "04:36",
+      "high_tide_end": "07:24",
+      "max_draft": 11.07,
+      "notes": "早潮"
+    },
+    {
+      "id": 82,
+      "port_name": "青岛",
+      "date": "2026-06-15",
+      "high_tide_start": "16:41",
+      "high_tide_end": "19:22",
+      "max_draft": 10.51,
+      "notes": "晚潮"
+    },
+    {
+      "id": 83,
+      "port_name": "烟台",
+      "date": "2026-06-15",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:10",
+      "max_draft": 8.67,
+      "notes": "早潮"
+    },
+    {
+      "id": 84,
+      "port_name": "烟台",
+      "date": "2026-06-15",
+      "high_tide_start": "16:20",
+      "high_tide_end": "19:03",
+      "max_draft": 8.24,
+      "notes": "晚潮"
+    },
+    {
+      "id": 85,
+      "port_name": "大连",
+      "date": "2026-06-15",
+      "high_tide_start": "04:40",
+      "high_tide_end": "07:25",
+      "max_draft": 10.63,
+      "notes": "早潮"
+    },
+    {
+      "id": 86,
+      "port_name": "大连",
+      "date": "2026-06-15",
+      "high_tide_start": "16:39",
+      "high_tide_end": "19:18",
+      "max_draft": 10.1,
+      "notes": "晚潮"
+    },
+    {
+      "id": 87,
+      "port_name": "天津",
+      "date": "2026-06-15",
+      "high_tide_start": "04:31",
+      "high_tide_end": "07:27",
+      "max_draft": 10.8,
+      "notes": "早潮"
+    },
+    {
+      "id": 88,
+      "port_name": "天津",
+      "date": "2026-06-15",
+      "high_tide_start": "16:49",
+      "high_tide_end": "19:16",
+      "max_draft": 10.26,
+      "notes": "晚潮"
+    },
+    {
+      "id": 89,
+      "port_name": "上海",
+      "date": "2026-06-15",
+      "high_tide_start": "04:40",
+      "high_tide_end": "07:28",
+      "max_draft": 11.34,
+      "notes": "早潮"
+    },
+    {
+      "id": 90,
+      "port_name": "上海",
+      "date": "2026-06-15",
+      "high_tide_start": "16:24",
+      "high_tide_end": "19:27",
+      "max_draft": 10.77,
+      "notes": "晚潮"
+    },
+    {
+      "id": 91,
+      "port_name": "宁波",
+      "date": "2026-06-15",
+      "high_tide_start": "04:47",
+      "high_tide_end": "07:15",
+      "max_draft": 10.98,
+      "notes": "早潮"
+    },
+    {
+      "id": 92,
+      "port_name": "宁波",
+      "date": "2026-06-15",
+      "high_tide_start": "16:41",
+      "high_tide_end": "19:00",
+      "max_draft": 10.43,
+      "notes": "晚潮"
+    },
+    {
+      "id": 93,
+      "port_name": "福州",
+      "date": "2026-06-15",
+      "high_tide_start": "04:50",
+      "high_tide_end": "07:27",
+      "max_draft": 8.36,
+      "notes": "早潮"
+    },
+    {
+      "id": 94,
+      "port_name": "福州",
+      "date": "2026-06-15",
+      "high_tide_start": "16:27",
+      "high_tide_end": "19:19",
+      "max_draft": 7.94,
+      "notes": "晚潮"
+    },
+    {
+      "id": 95,
+      "port_name": "广州",
+      "date": "2026-06-15",
+      "high_tide_start": "04:48",
+      "high_tide_end": "07:13",
+      "max_draft": 8.29,
+      "notes": "早潮"
+    },
+    {
+      "id": 96,
+      "port_name": "广州",
+      "date": "2026-06-15",
+      "high_tide_start": "16:33",
+      "high_tide_end": "19:11",
+      "max_draft": 7.87,
+      "notes": "晚潮"
+    },
+    {
+      "id": 97,
+      "port_name": "深圳",
+      "date": "2026-06-15",
+      "high_tide_start": "04:32",
+      "high_tide_end": "07:07",
+      "max_draft": 8.55,
+      "notes": "早潮"
+    },
+    {
+      "id": 98,
+      "port_name": "深圳",
+      "date": "2026-06-15",
+      "high_tide_start": "16:49",
+      "high_tide_end": "19:10",
+      "max_draft": 8.12,
+      "notes": "晚潮"
+    },
+    {
+      "id": 99,
+      "port_name": "海口",
+      "date": "2026-06-15",
+      "high_tide_start": "04:44",
+      "high_tide_end": "07:22",
+      "max_draft": 7.06,
+      "notes": "早潮"
+    },
+    {
+      "id": 100,
+      "port_name": "海口",
+      "date": "2026-06-15",
+      "high_tide_start": "16:25",
+      "high_tide_end": "19:00",
+      "max_draft": 6.71,
+      "notes": "晚潮"
+    },
+    {
+      "id": 101,
+      "port_name": "青岛",
+      "date": "2026-06-16",
+      "high_tide_start": "04:30",
+      "high_tide_end": "07:18",
+      "max_draft": 9.56,
+      "notes": "早潮"
+    },
+    {
+      "id": 102,
+      "port_name": "青岛",
+      "date": "2026-06-16",
+      "high_tide_start": "16:21",
+      "high_tide_end": "19:09",
+      "max_draft": 9.08,
+      "notes": "晚潮"
+    },
+    {
+      "id": 103,
+      "port_name": "烟台",
+      "date": "2026-06-16",
+      "high_tide_start": "04:55",
+      "high_tide_end": "07:14",
+      "max_draft": 11.98,
+      "notes": "早潮"
+    },
+    {
+      "id": 104,
+      "port_name": "烟台",
+      "date": "2026-06-16",
+      "high_tide_start": "16:25",
+      "high_tide_end": "19:17",
+      "max_draft": 11.38,
+      "notes": "晚潮"
+    },
+    {
+      "id": 105,
+      "port_name": "大连",
+      "date": "2026-06-16",
+      "high_tide_start": "04:56",
+      "high_tide_end": "07:02",
+      "max_draft": 10.79,
+      "notes": "早潮"
+    },
+    {
+      "id": 106,
+      "port_name": "大连",
+      "date": "2026-06-16",
+      "high_tide_start": "16:47",
+      "high_tide_end": "19:13",
+      "max_draft": 10.25,
+      "notes": "晚潮"
+    },
+    {
+      "id": 107,
+      "port_name": "天津",
+      "date": "2026-06-16",
+      "high_tide_start": "04:38",
+      "high_tide_end": "07:04",
+      "max_draft": 11.82,
+      "notes": "早潮"
+    },
+    {
+      "id": 108,
+      "port_name": "天津",
+      "date": "2026-06-16",
+      "high_tide_start": "16:40",
+      "high_tide_end": "19:20",
+      "max_draft": 11.23,
+      "notes": "晚潮"
+    },
+    {
+      "id": 109,
+      "port_name": "上海",
+      "date": "2026-06-16",
+      "high_tide_start": "04:32",
+      "high_tide_end": "07:28",
+      "max_draft": 7.94,
+      "notes": "早潮"
+    },
+    {
+      "id": 110,
+      "port_name": "上海",
+      "date": "2026-06-16",
+      "high_tide_start": "16:48",
+      "high_tide_end": "19:05",
+      "max_draft": 7.54,
+      "notes": "晚潮"
+    },
+    {
+      "id": 111,
+      "port_name": "宁波",
+      "date": "2026-06-16",
+      "high_tide_start": "04:35",
+      "high_tide_end": "07:05",
+      "max_draft": 11.75,
+      "notes": "早潮"
+    },
+    {
+      "id": 112,
+      "port_name": "宁波",
+      "date": "2026-06-16",
+      "high_tide_start": "16:38",
+      "high_tide_end": "19:11",
+      "max_draft": 11.16,
+      "notes": "晚潮"
+    },
+    {
+      "id": 113,
+      "port_name": "福州",
+      "date": "2026-06-16",
+      "high_tide_start": "04:34",
+      "high_tide_end": "07:22",
+      "max_draft": 8.57,
+      "notes": "早潮"
+    },
+    {
+      "id": 114,
+      "port_name": "福州",
+      "date": "2026-06-16",
+      "high_tide_start": "16:46",
+      "high_tide_end": "19:08",
+      "max_draft": 8.14,
+      "notes": "晚潮"
+    },
+    {
+      "id": 115,
+      "port_name": "广州",
+      "date": "2026-06-16",
+      "high_tide_start": "04:37",
+      "high_tide_end": "07:11",
+      "max_draft": 11.35,
+      "notes": "早潮"
+    },
+    {
+      "id": 116,
+      "port_name": "广州",
+      "date": "2026-06-16",
+      "high_tide_start": "16:43",
+      "high_tide_end": "19:26",
+      "max_draft": 10.78,
+      "notes": "晚潮"
+    },
+    {
+      "id": 117,
+      "port_name": "深圳",
+      "date": "2026-06-16",
+      "high_tide_start": "04:48",
+      "high_tide_end": "07:27",
+      "max_draft": 7.54,
+      "notes": "早潮"
+    },
+    {
+      "id": 118,
+      "port_name": "深圳",
+      "date": "2026-06-16",
+      "high_tide_start": "16:38",
+      "high_tide_end": "19:23",
+      "max_draft": 7.17,
+      "notes": "晚潮"
+    },
+    {
+      "id": 119,
+      "port_name": "海口",
+      "date": "2026-06-16",
+      "high_tide_start": "04:49",
+      "high_tide_end": "07:28",
+      "max_draft": 7.79,
+      "notes": "早潮"
+    },
+    {
+      "id": 120,
+      "port_name": "海口",
+      "date": "2026-06-16",
+      "high_tide_start": "16:45",
+      "high_tide_end": "19:19",
+      "max_draft": 7.4,
+      "notes": "晚潮"
+    },
+    {
+      "id": 121,
+      "port_name": "青岛",
+      "date": "2026-06-17",
+      "high_tide_start": "04:40",
+      "high_tide_end": "07:04",
+      "max_draft": 8.24,
+      "notes": "早潮"
+    },
+    {
+      "id": 122,
+      "port_name": "青岛",
+      "date": "2026-06-17",
+      "high_tide_start": "16:20",
+      "high_tide_end": "19:14",
+      "max_draft": 7.83,
+      "notes": "晚潮"
+    },
+    {
+      "id": 123,
+      "port_name": "烟台",
+      "date": "2026-06-17",
+      "high_tide_start": "04:39",
+      "high_tide_end": "07:10",
+      "max_draft": 8.82,
+      "notes": "早潮"
+    },
+    {
+      "id": 124,
+      "port_name": "烟台",
+      "date": "2026-06-17",
+      "high_tide_start": "16:20",
+      "high_tide_end": "19:18",
+      "max_draft": 8.38,
+      "notes": "晚潮"
+    },
+    {
+      "id": 125,
+      "port_name": "大连",
+      "date": "2026-06-17",
+      "high_tide_start": "04:51",
+      "high_tide_end": "07:09",
+      "max_draft": 8.1,
+      "notes": "早潮"
+    },
+    {
+      "id": 126,
+      "port_name": "大连",
+      "date": "2026-06-17",
+      "high_tide_start": "16:42",
+      "high_tide_end": "19:19",
+      "max_draft": 7.7,
+      "notes": "晚潮"
+    },
+    {
+      "id": 127,
+      "port_name": "天津",
+      "date": "2026-06-17",
+      "high_tide_start": "04:40",
+      "high_tide_end": "07:06",
+      "max_draft": 7.95,
+      "notes": "早潮"
+    },
+    {
+      "id": 128,
+      "port_name": "天津",
+      "date": "2026-06-17",
+      "high_tide_start": "16:35",
+      "high_tide_end": "19:26",
+      "max_draft": 7.55,
+      "notes": "晚潮"
+    },
+    {
+      "id": 129,
+      "port_name": "上海",
+      "date": "2026-06-17",
+      "high_tide_start": "04:39",
+      "high_tide_end": "07:12",
+      "max_draft": 8.36,
+      "notes": "早潮"
+    },
+    {
+      "id": 130,
+      "port_name": "上海",
+      "date": "2026-06-17",
+      "high_tide_start": "16:34",
+      "high_tide_end": "19:12",
+      "max_draft": 7.94,
+      "notes": "晚潮"
+    },
+    {
+      "id": 131,
+      "port_name": "宁波",
+      "date": "2026-06-17",
+      "high_tide_start": "04:57",
+      "high_tide_end": "07:10",
+      "max_draft": 9.06,
+      "notes": "早潮"
+    },
+    {
+      "id": 132,
+      "port_name": "宁波",
+      "date": "2026-06-17",
+      "high_tide_start": "16:20",
+      "high_tide_end": "19:15",
+      "max_draft": 8.61,
+      "notes": "晚潮"
+    },
+    {
+      "id": 133,
+      "port_name": "福州",
+      "date": "2026-06-17",
+      "high_tide_start": "04:42",
+      "high_tide_end": "07:25",
+      "max_draft": 11.66,
+      "notes": "早潮"
+    },
+    {
+      "id": 134,
+      "port_name": "福州",
+      "date": "2026-06-17",
+      "high_tide_start": "16:43",
+      "high_tide_end": "19:06",
+      "max_draft": 11.07,
+      "notes": "晚潮"
+    },
+    {
+      "id": 135,
+      "port_name": "广州",
+      "date": "2026-06-17",
+      "high_tide_start": "04:49",
+      "high_tide_end": "07:04",
+      "max_draft": 11.59,
+      "notes": "早潮"
+    },
+    {
+      "id": 136,
+      "port_name": "广州",
+      "date": "2026-06-17",
+      "high_tide_start": "16:34",
+      "high_tide_end": "19:21",
+      "max_draft": 11.01,
+      "notes": "晚潮"
+    },
+    {
+      "id": 137,
+      "port_name": "深圳",
+      "date": "2026-06-17",
+      "high_tide_start": "04:53",
+      "high_tide_end": "07:00",
+      "max_draft": 9.59,
+      "notes": "早潮"
+    },
+    {
+      "id": 138,
+      "port_name": "深圳",
+      "date": "2026-06-17",
+      "high_tide_start": "16:28",
+      "high_tide_end": "19:00",
+      "max_draft": 9.11,
+      "notes": "晚潮"
+    },
+    {
+      "id": 139,
+      "port_name": "海口",
+      "date": "2026-06-17",
+      "high_tide_start": "04:31",
+      "high_tide_end": "07:05",
+      "max_draft": 11.83,
+      "notes": "早潮"
+    },
+    {
+      "id": 140,
+      "port_name": "海口",
+      "date": "2026-06-17",
+      "high_tide_start": "16:46",
+      "high_tide_end": "19:21",
+      "max_draft": 11.24,
+      "notes": "晚潮"
+    }
+  ],
+  "stowage_plans": [
+    {
+      "id": 1,
+      "plan_no": "STW20260611001",
+      "vessel_id": 1,
+      "voyage_no": null,
+      "etd": "2026-06-11 04:56",
+      "eta": "2026-06-11 12:56",
+      "origin_port": "青岛",
+      "destination_port": "烟台",
+      "tide_window_id": 1,
+      "total_weight": 3100,
+      "total_volume": 2700,
+      "status": "draft",
+      "notes": null
+    },
+    {
+      "id": 2,
+      "plan_no": "STW20260611002",
+      "vessel_id": 1,
+      "voyage_no": null,
+      "etd": "2026-06-11 04:56",
+      "eta": "2026-06-11 12:56",
+      "origin_port": "青岛",
+      "destination_port": "烟台",
+      "tide_window_id": 1,
+      "total_weight": 3100,
+      "total_volume": 2700,
+      "status": "draft",
+      "notes": null
+    }
+  ],
+  "stowage_plan_items": [
+    {
+      "id": 1,
+      "plan_id": 1,
+      "order_id": 1,
+      "loading_sequence": 1,
+      "created_at": "2026-06-11 17:49:52"
+    },
+    {
+      "id": 2,
+      "plan_id": 1,
+      "order_id": 4,
+      "loading_sequence": 2,
+      "created_at": "2026-06-11 17:49:52"
+    },
+    {
+      "id": 3,
+      "plan_id": 2,
+      "order_id": 1,
+      "loading_sequence": 1,
+      "created_at": "2026-06-11 17:49:59"
+    },
+    {
+      "id": 4,
+      "plan_id": 2,
+      "order_id": 4,
+      "loading_sequence": 2,
+      "created_at": "2026-06-11 17:49:59"
+    }
+  ],
+  "conflict_reports": [
+    {
+      "id": 1,
+      "plan_id": 1,
+      "conflict_type": "urgent_delivery",
+      "severity": "medium",
+      "description": "订单 ORD202606004 交货期紧迫，仅剩 2 天",
+      "involved_orders": "[4]",
+      "created_at": "2026-06-11 17:49:52"
+    },
+    {
+      "id": 2,
+      "plan_id": 1,
+      "conflict_type": "draft_margin_small",
+      "severity": "high",
+      "description": "吃水余量仅 0.24m，小于安全余量 0.5m，需谨慎操作",
+      "involved_orders": null,
+      "created_at": "2026-06-11 17:49:52"
+    },
+    {
+      "id": 3,
+      "plan_id": 2,
+      "conflict_type": "urgent_delivery",
+      "severity": "medium",
+      "description": "订单 ORD202606004 交货期紧迫，仅剩 2 天",
+      "involved_orders": "[4]",
+      "created_at": "2026-06-11 17:49:59"
+    },
+    {
+      "id": 4,
+      "plan_id": 2,
+      "conflict_type": "draft_margin_small",
+      "severity": "high",
+      "description": "吃水余量仅 0.24m，小于安全余量 0.5m，需谨慎操作",
+      "involved_orders": null,
+      "created_at": "2026-06-11 17:49:59"
+    }
+  ],
+  "sequences": {
+    "vessels": 4,
+    "cargo_orders": 8,
+    "dangerous_goods_rules": 9,
+    "tide_windows": 140,
+    "stowage_plans": 2,
+    "stowage_plan_items": 4,
+    "conflict_reports": 4
+  }
+}
