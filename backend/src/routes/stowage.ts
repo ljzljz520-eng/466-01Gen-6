@@ -265,7 +265,7 @@ router.delete('/:id', (req: Request, res: Response) => {
     const allPlans = db.prepare('SELECT * FROM stowage_plans').all() as any[];
     const plan = allPlans.find(p => p.id === pid) as StowagePlan;
     if (!plan) return res.status(404).json({ success: false, error: '配载计划不存在' });
-    if (plan.captain_confirmed === 1 || plan.captain_confirmed === true) {
+    if (plan.captain_confirmed >= 1) {
       return res.status(400).json({ success: false, error: '船长已确认的计划无法删除，请先取消确认' });
     }
     const planItems = db.prepare('SELECT * FROM stowage_plan_items').all().filter((i: any) => i.plan_id === pid) as any[];
@@ -296,8 +296,8 @@ router.get('/customer/search', (req: Request, res: Response) => {
     const orders = allOrders.filter(o => {
       let match = true;
       if (order_no) match = match && (o.order_no === order_no);
-      if (customer_name) match = match && (o.customer_name && o.customer_name.includes(customer_name));
-      if (phone) match = match && (o.customer_contact && o.customer_contact.includes(phone));
+      if (customer_name) match = match && !!(o.customer_name && o.customer_name.includes(customer_name));
+      if (phone) match = match && !!(o.customer_contact && o.customer_contact.includes(phone));
       return match;
     }).slice(0, 50);
 

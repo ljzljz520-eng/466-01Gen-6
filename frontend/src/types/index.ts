@@ -44,6 +44,15 @@ export interface TideWindow {
   notes: string;
 }
 
+export interface DangerousGoodsRule {
+  id: number;
+  category_a: string;
+  category_b: string;
+  conflict_level: string;
+  rule_description: string;
+  created_at?: string;
+}
+
 export interface ConflictItem {
   type: string;
   severity: 'critical' | 'high' | 'medium' | 'low';

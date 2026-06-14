@@ -6,6 +6,9 @@ dist/
 frontend/dist/
 backend/dist/
 .vite/
+*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
 
 # Test output
 coverage/
